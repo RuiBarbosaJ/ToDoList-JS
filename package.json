@@ -1,0 +1,20 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "To do list com JS",
+  "homepage": "https://github.com/RuiBarbosaJ/ToDoList-JS#readme",
+  "bugs": {
+    "url": "https://github.com/RuiBarbosaJ/ToDoList-JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuiBarbosaJ/ToDoList-JS.git"
+  },
+  "license": "MIT",
+  "author": "Rui Barbosa",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

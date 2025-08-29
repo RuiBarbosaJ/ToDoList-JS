@@ -1,0 +1,182 @@
+body {
+  max-width: 450px;
+  padding: 0 20px;
+  color: #ffffff;
+  background-color: lightgray;
+  margin: auto;
+}
+
+main {
+  border: solid #465d46;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.font-style {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(50, 146, 46);
+}
+
+h1 > span {
+  color: #465d46;
+}
+
+#espaceInputPrincipal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+
+  background-color: rgb(219, 230, 219);
+}
+
+#espaceButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#addTask {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: #465d46;
+  color: white;
+  cursor: pointer;
+  border: solid 1px #465d46;
+  border-radius: 4px;
+}
+
+#limparTask {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: #643f3a;
+  color: white;
+  cursor: pointer;
+  border: solid 1px #465d46;
+  border-radius: 4px;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tasks li {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 0.5px solid #eee;
+  padding: 10px;
+}
+
+.div-input,
+.div-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+/* INICIO DO CHECKBOX */
+#checkbox {
+  appearance: none; /* Remove a aparência padrão do checkbox */
+  width: 14px; /* Tamanho do checkbox */
+  height: 14px;
+  border: 2px solid black; /* Cor da borda padrão */
+  position: relative;
+  cursor: pointer;
+
+  margin-right: 4px;
+}
+
+#checkbox:checked {
+  border-color: transparent; /* Remove a borda quando marcado */
+}
+
+#checkbox:checked::before,
+#checkbox:checked::after {
+  content: "";
+  position: absolute;
+  background-color: #374637; /* Cor do "X" */
+  width: 2px;
+  height: 14px; /* Tamanho do traço do "X" */
+  top: 0;
+  left: 5px;
+}
+
+#checkbox:checked::before {
+  transform: rotate(45deg);
+}
+
+#checkbox:checked::after {
+  transform: rotate(-45deg);
+}
+/* FIM DO CHECKBOX */
+
+#tasks li button {
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* const input = document.createElement("input") */
+#inputLi {
+  padding: 8px;
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.removeBtn {
+  background-color: #643f3a;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.editBtn {
+  background-color: rgb(60, 83, 109);
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.salvarBtn {
+  background-color: #4caf50;
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.ocultarBtn {
+  display: none;
+}

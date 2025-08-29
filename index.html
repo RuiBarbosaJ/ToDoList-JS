@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>To-Do list Básica</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="font-style"><span>To do</span> List</h1>
+
+      <div id="espaceInputPrincipal">
+        <input
+          class="font-style"
+          type="text"
+          id="taskInput"
+          placeholder="Nova tarefa..."
+        />
+      </div>
+
+      <div id="espaceButton">
+        <button class="font-style" id="addTask">Adicionar</button>
+        <button class="font-style" id="limparTask">
+          Excluir todas tarefas
+        </button>
+      </div>
+
+      <ul id="tasks"></ul>
+    </main>
+  </body>
+</html>
